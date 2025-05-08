@@ -12,7 +12,7 @@ Projects will be added progressively as I complete each one. Each folder include
 ## 🚀 Current Focus
 
 - Full Stack Developer Curriculum (New)
-  - Currently in the **HTML section**
+  - **HTML section**
   - First project: **Recipe Page**
 
 ## 📁 Structure
