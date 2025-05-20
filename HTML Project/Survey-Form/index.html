@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+</head>
+
+<body>
+
+    <h1 id="title">Survey Form</h1>
+
+    <p id="description">Please fill out this short survey to help us improve your experience.</p>
+
+    <form id="survey-form">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>
+
+            <label id="number-label" for="number">Age:</label>
+            <input type="number" id="number" name="age" min="18" max="100" placeholder="Enter your age"
+                required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Survey Questions</legend>
+
+            <label for="dropdown">How did you hear about us?</label>
+            <select id="dropdown" name="referral">
+                <option value="">Select one</option>
+                <option value="friend">Friend</option>
+                <option value="online">Online Advertisement</option>
+            </select><br><br>
+
+            <legend>How satisfied are you with our service?</legend>
+            <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+            <label for="satisfied">Satisfied</label><br>
+            <input type="radio" id="neutral" name="satisfaction" value="neutral">
+            <label for="neutral">Neutral</label><br><br>
+
+            <legend>What features do you use? (Select all that apply)</legend>
+            <input type="checkbox" id="feature1" name="features" value="chat">
+            <label for="feature1">Live Chat</label><br>
+            <input type="checkbox" id="feature2" name="features" value="dashboard">
+            <label for="feature2">Dashboard</label><br>
+            <input type="checkbox" id="feature3" name="features" value="notifications">
+            <label for="feature3">Notifications</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Comments</legend>
+            <label for="comments">Any additional comments?</label><br>
+            <textarea id="comments" name="comments" placeholder="Type your comment here..."></textarea>
+        </fieldset><br>
+
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+
+</body>
+
+</html>
